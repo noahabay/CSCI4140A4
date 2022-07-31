@@ -261,6 +261,8 @@ export default {
         this.date = "";
         this.$router.push("/");
       } catch (err) {
+        // if even one endpoint fails than all of them fail --> this is how axios Promise.all() works
+        alert("There was an error submitting your purchase order.")
         console.log(err);
       }
     },
