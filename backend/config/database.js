@@ -5,7 +5,7 @@ const db = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "Lionking1@",
+  password: "root",
   database: "assignment3_396",
 });
 
